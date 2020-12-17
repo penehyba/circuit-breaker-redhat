@@ -188,4 +188,4 @@ objects:
       targetPort: 8080
     to:
       kind: Service
-      name: thorntail-circuit-breaker-greeting
+      name: tg
