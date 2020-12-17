@@ -17,13 +17,13 @@
  */
 package io.thorntail.example;
 
+import java.util.concurrent.TimeUnit;
+
 import org.arquillian.cube.openshift.impl.enricher.AwaitRoute;
 import org.arquillian.cube.openshift.impl.enricher.RouteURL;
 import org.jboss.arquillian.junit.Arquillian;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import java.util.concurrent.TimeUnit;
 
 import static io.restassured.RestAssured.given;
 import static org.awaitility.Awaitility.await;
@@ -32,8 +32,8 @@ import static org.hamcrest.Matchers.equalTo;
 
 @RunWith(Arquillian.class)
 public class OpenshiftIT {
-    private static final String NAME_SERVICE_APP = "thorntail-circuit-breaker-name";
-    private static final String GREETING_SERVICE_APP = "thorntail-circuit-breaker-greeting";
+    private static final String NAME_SERVICE_APP = "tn";
+    private static final String GREETING_SERVICE_APP = "tg";
 
     private static final String OK = "ok";
     private static final String FAIL = "fail";

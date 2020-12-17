@@ -182,7 +182,7 @@ objects:
     labels:
       app: thorntail-circuit-breaker-name
       group: io.thorntail.example
-    name: thorntail-circuit-breaker-name
+    name: tn
   spec:
     port:
       targetPort: 8080
