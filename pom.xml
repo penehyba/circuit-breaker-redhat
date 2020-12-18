@@ -76,13 +76,6 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>org.arquillian.cube</groupId>
-        <artifactId>arquillian-cube-bom</artifactId>
-        <version>${version.arquillian-cube}</version>
-        <scope>import</scope>
-        <type>pom</type>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 
