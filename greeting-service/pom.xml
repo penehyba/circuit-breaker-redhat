@@ -76,6 +76,13 @@
               </execution>
             </executions>
             <configuration>
+            <!-- Known issue: Thorntail applications fail to boot due to logging issues -->
+              <resources>
+                <env>
+                  <AB_OFF>true</AB_OFF>
+                  <AB_JOLOKIA_OFF>true</AB_JOLOKIA_OFF>
+                </env>
+              </resources>
               <enricher>
                 <config>
                   <jkube-healthcheck-thorntail-v2>
